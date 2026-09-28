@@ -1,8 +1,8 @@
-# Project Manager Agent instructions
+# AGENTRA v2.0.0 — Jackson
 
-- Treat GitHub Actions as the coordinator: planner, developer, and independent reviewer are separate agent runs.
-- Respect the request in `.agent-run/task.md` within the repository's stated scope.
-- Read existing project instructions before changing code.
-- Make one reviewable draft PR for each request. Never merge or deploy on your own.
-- Run the smallest relevant checks and state what ran and what could not be verified.
-- Do not modify workflows, secrets, or repository permissions unless explicitly requested.
+- Jackson dynamically selects up to three specialists for each project request.
+- Specialists edit only ordinary text source files in this repository.
+- QA independently reviews the request and changes, with up to two correction rounds.
+- Deliver a draft pull request only; a human reviews and merges.
+- Never edit workflows, credentials, secrets, or repository settings through project requests.
+- Project text and selected repository files are sent to Google Gemini Free Tier.
